@@ -18,16 +18,22 @@
     <![endif]-->
   </head>
   <body>
-    <div class="quote-container">
-      <div class="quotesDisplay hide-display fade-in-display">
-        Welcome To the Amazing Quote Machine!
+    <div class="slide-container" ontouchstart="touchStart(event,'swipe');" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);">
+      <div class="quote-container">
+        <div class="quotesDisplay hide-display fade-in-display">
+          Welcome To the Amazing Quote Machine!
+        </div>
+        <div class="quoteAuthor hide-display fade-in-display"></div>
       </div>
-      <div class="quoteAuthor hide-display fade-in-display"></div>
+      <button class="quoteBtn center">Quote<i class="fa fa-chevron-right"></i></button>
+      <div class="swipeIndicator center">
+        <i class="fa fa-arrow-left"></i>  Swipe (Quote)  <i class="fa fa-arrow-right"></i><br><br>
+        <i class="fa fa-arrow-up"></i>  Swipe (Color)  <i class="fa fa-arrow-down"></i>
+      </div>
+      <a href="#" target="_blank" id="twitterLink">
+        <i class="fa fa-twitter twitter-button" class="fa fa-twitter twitter-button" aria-hidden="true"></i>
+      </a>
     </div>
-    <button id="quoteBtn">Quote<i class="fa fa-chevron-right"></i></button>
-    <a href="#" target="_blank" id="twitterLink">
-      <i class="fa fa-twitter twitter-button" class="fa fa-twitter twitter-button" aria-hidden="true"></i>
-    </a>
     <!-- BOOTSTRAP CORE / JQUERY / MAIN.js–≠-->
     <script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
