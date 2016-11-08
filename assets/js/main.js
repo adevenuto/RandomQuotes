@@ -34,9 +34,8 @@ $('#twitterLink').on('click touchstart', function(e){
   window.open(tweetURL + quote + encodeURIComponent(" #quotes"));
 });
 // Manage screen window width
-$(function(){
-  var body = $('body');
   $(window).on('load resize', function() {
+    var body = $('body');
     var w = window.innerWidth;
     if (w<=768) {
       $('.quoteBtn').removeClass('show');
@@ -48,7 +47,6 @@ $(function(){
       body.removeAttr('id');
     }
   });
-});
 // Create random rgb color
 function randColor() {
   var r = Math.floor(Math.random()*(250-0+1)+0);
