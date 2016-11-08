@@ -171,9 +171,9 @@ function randColor() {
     } else if ( swipeDirection == 'right' ) {
       newQuote();
     } else if ( swipeDirection == 'up' ) {
-      randColor()
+      randColor();
     } else if ( swipeDirection == 'down' ) {
-      randColor()
+      randColor();
     }
   }
 

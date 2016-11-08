@@ -6,6 +6,7 @@ html, body {
 body {
   background: #000;
   color: #fff;
+  font-family: 'Abel', sans-serif;
 }
 .slide-container {
   height: 100%;
@@ -48,13 +49,14 @@ body {
 }
 .twitter-button:hover {
   transition: color 200ms linear;
-  color: #fff;
+  color: #808080;
 }
 .center {
   position: absolute;
   left: 50%;
   top: 65%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .quoteBtn {
   border-color: #fff;
@@ -65,11 +67,12 @@ body {
   transition: all 200ms linear;
   padding: 5px 10px;
   font-size: 20px;
+  cursor: pointer;
 }
 .quoteBtn:after {
   content: "By: Anthony DeVenuto";
   position: absolute;
-  top: 60px;
+  top: 83px;
   left: 50%;
   transform:translate(-50%);
   font-size: .5em;
@@ -77,6 +80,9 @@ body {
 }
 .quoteBtn:focus {
   outline: none;
+}
+.fa-paint-brush {
+  margin-top: 15px;
 }
 .fa-chevron-right {
   color: #fff;
