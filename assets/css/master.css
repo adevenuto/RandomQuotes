@@ -1,0 +1,89 @@
+body {
+  background: #000;
+  color: #fff;
+}
+.quote-container {
+  overflow: hidden;
+  width: 80%;
+  margin: 70px auto;
+  padding: 10px;
+}
+.quoteAuthor {
+  float: right;
+  margin: 20px 20px 0 0;
+  font-size: .9em;
+  font-style: italic;
+}
+.quotesDisplay {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.5em
+}
+.hide-display {
+  opacity: 0;
+  transition: opacity 400ms linear;
+}
+.fade-in-display {
+  opacity: 1;
+}
+.twitter-button {
+  font-size: 4em;
+  color: #337ab7;
+}
+#twitterLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -ms-transform: rotate(63deg); /* IE 9 */
+  -webkit-transform: rotate(63deg); /* Chrome, Safari, Opera */
+  transform: rotate(63deg);
+}
+.twitter-button:hover {
+  transition: color 200ms linear;
+  color: #fff;
+}
+#quoteBtn {
+  background: rgb(51, 122, 183);
+  border-color: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  transition: all 200ms linear;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%);
+  padding: 5px 10px;
+  font-size: 20px;
+}
+#quoteBtn:after {
+  content: "By: Anthony DeVenuto";
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform:translate(-50%);
+  font-size: .5em;
+  width: 200px;
+}
+#quoteBtn:hover{
+  background: rgba(0, 0, 0, 0);
+  border-color: #fff;
+  color: #fff;
+}
+#quoteBtn:focus {
+  outline: none;
+}
+.fa-chevron-right {
+  color: #fff;
+  margin-left: 10px;
+}
+.fa-quote-left {
+  font-size: .7em;
+  position: relative;
+  top: -10px;
+}
+@media (min-width: 900px) {
+  .quote-container {
+    width: 45%;
+  }
+}
