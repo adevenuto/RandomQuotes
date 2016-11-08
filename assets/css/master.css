@@ -14,7 +14,7 @@ body {
   overflow: hidden;
   width: 80%;
   margin: 0 auto;
-  padding: 70px 10px 10px 10px;
+  padding: 80px 10px 10px 10px;
 }
 .quoteAuthor {
   float: right;
@@ -57,8 +57,8 @@ body {
   transform: translate(-50%, -50%);
 }
 .quoteBtn {
-  background: rgb(51, 122, 183);
-  border-color: #ffffff;
+  border-color: #fff;
+  background: rgba(0,0,0,0);
   border: 1px solid #fff;
   border-radius: 4px;
   color: #fff;
@@ -74,11 +74,6 @@ body {
   transform:translate(-50%);
   font-size: .5em;
   width: 200px;
-}
-.quoteBtn:hover{
-  background: rgba(0, 0, 0, 0);
-  border-color: #fff;
-  color: #fff;
 }
 .quoteBtn:focus {
   outline: none;

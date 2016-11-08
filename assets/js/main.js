@@ -24,7 +24,7 @@ $('.quoteBtn').on('click', function(){
   newQuote();
 });
 
-$('#twitterLink').on('click', function(e){
+$('#twitterLink').on('click touchstart', function(e){
   e.preventDefault();
   var tweetURL = "https://twitter.com/intent/tweet?text=";
   window.open(tweetURL + quote + encodeURIComponent(" #quotes"));
